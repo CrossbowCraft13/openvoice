@@ -55,7 +55,7 @@ jobs:
           echo "See [CHANGELOG.md](CHANGELOG.md) for full details." >> release-notes.md
 
       - name: Create GitHub Release
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v3
         with:
           body_path: release-notes.md
           files: |
