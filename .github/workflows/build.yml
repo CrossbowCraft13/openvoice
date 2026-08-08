@@ -23,7 +23,7 @@ jobs:
         with:
           distribution: 'zulu'
           java-version: '17'
-      - uses: android-actions/setup-android@v3
+      - uses: android-actions/setup-android@v4
       - name: Install NDK & CMake
         run: |
           yes | sdkmanager --licenses > /dev/null
@@ -59,7 +59,7 @@ jobs:
           java-version: '17'
 
       - name: Set up Android SDK
-        uses: android-actions/setup-android@v3
+        uses: android-actions/setup-android@v4
 
       - name: Install NDK & CMake
         run: |
